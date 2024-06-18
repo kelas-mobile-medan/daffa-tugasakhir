@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_navigation_1/cubit/auth_cubit.dart';
-import 'package:flutter_navigation_1/pages/login.dart';
+import 'package:tugasakhir/cubit/auth_cubit.dart';
+import 'package:tugasakhir/pages/login.dart';
 
 void main() {
   runApp(const MainApp());

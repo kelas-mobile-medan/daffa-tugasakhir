@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_navigation_1/cubit/auth_cubit.dart';
-import 'package:flutter_navigation_1/pages/home.dart';
+import 'package:tugasakhir/cubit/auth_cubit.dart';
+import 'package:tugasakhir/pages/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Login extends StatefulWidget {

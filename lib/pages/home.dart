@@ -1,6 +1,8 @@
+// ignore_for_file: type_init_formals
+
 import 'package:flutter/material.dart';
-import 'package:flutter_navigation_1/pages/login.dart';
-import 'package:flutter_navigation_1/pages/product.dart';
+import 'package:tugasakhir/pages/login.dart';
+import 'package:tugasakhir/pages/product.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Home extends StatelessWidget {

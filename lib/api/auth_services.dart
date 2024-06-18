@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:flutter_navigation_1/config/app_constant.dart';
-import 'package:flutter_navigation_1/model/auth_model.dart';
+import 'package:tugasakhir/config/app_constant.dart';
+import 'package:tugasakhir/model/auth_model.dart';
 import 'package:http/http.dart' as http;
 
 class AuthServices {

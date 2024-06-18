@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:flutter_navigation_1/api/auth_services.dart';
-import 'package:flutter_navigation_1/model/auth_model.dart';
+import 'package:tugasakhir/api/auth_services.dart';
+import 'package:tugasakhir/model/auth_model.dart';
 import 'package:meta/meta.dart';
 
 part 'auth_state.dart';
