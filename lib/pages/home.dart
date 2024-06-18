@@ -34,24 +34,48 @@ class _HomeState extends State<Home> {
       body: Column(
         children: [
           Text('Ini Halaman Home, Welcome ${widget.username}'),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ProductPage()),
-              );
-            },
-            child: const Text('Halaman GridView'),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProductPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.blue, // Text color
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text('Halaman GridView'),
+            ),
           ),
-          TextButton(
-            child: const Text('Logout'),
-            onPressed: () async {
-              await removeSessionLogin();
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => const Login()),
-              );
-            },
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            child: ElevatedButton(
+              onPressed: () async {
+                await removeSessionLogin();
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Login()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.red, // Text color
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text('Logout'),
+            ),
           ),
           Expanded(
             child: FutureBuilder<List<Product>>(
